@@ -8,7 +8,7 @@ _A Labor Economic Canon_
     Assigned By Proff. dr. J.A. Smulders     
     
     
-![](https://www.atlasnetwork.org/assets/uploads/news-main/_detail/wage_gap.png)
+![](https://fortunedotcom.files.wordpress.com/2016/04/173291564.jpg?w=399)
 
  
  
