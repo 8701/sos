@@ -1,5 +1,5 @@
 # _**Labor market discrimination in the United States Canon**_ <span style="color:red"></span>
-===================================================
+==================================================
 
 
 ![](https://www.atlasnetwork.org/assets/uploads/news-main/_detail/wage_gap.png)
@@ -18,8 +18,10 @@ In the era of social media, many issues are brought into the limelight. One of t
 --------
 
 
-
-
+                                                                                                                                                                                                                                                                             
+ 
+ 
+ 
 
 How big is the wage gap in the United States?
 --------
@@ -59,6 +61,12 @@ There is evidence for discrimination towards females. This is due to statistical
 
 Customers have a preference to get served by male individuals, they would pay higher prices when served by males rather than if they were to get served by females. This would lead to unprofitability when female presence is apparent, which causes employers to hire men more often than women. Male employees in turn want to get a compensation when working with women because wages would be lower when there is a female presence. Adding just one female could influence the wages in such a way that the optimal allocation of workforce becomes a separation between man and women. Segregation causes a separate male and female workplace, which causes a gap between wages. Employers could also simply prefer male employees, based on a bias they have on males and females on the workforce.  [#] (https://books.google.nl/books?hl=en&lr=&id=50qHcSNVVEMC&oi=fnd&pg=PP7&dq=becker+discrimination&ots=EQmTMbevEq&sig=3XJrYLRl8wX9xo19PeshqUQrs7c#v=onepage&q=becker%20discrimination&f=false)  Goldin and Rouse point out in a study, a phenomenon where males are preferred over women. However there is no difference if the characteristics of being a male and female are hidden, thus forcing employers to judge the applicant based on its skills. This explains the employers' preferences for men over women. [#] (http://www.nber.org/papers/w5903)
 Company size and culture also matters. Affirmative action is a policy which resulted by government regulation that made sure that minorities would get hired. Women got hired more often than without affirmative action. The effect was significant, as it increased the amount of women in male dominated jobs by 8% to 20%.  [#] (https://www.dol.gov/general/topic/hiring/affirmativeact) [#] (http://ideas.time.com/2013/06/17/affirmative-action-has-helped-white-women-more-than-anyone/) Affermative action could also have some discriminatory effect itself. A study has shown that minorities under affermative action needed lower SAT-scores to get accepted for the same position. [#] (http://press.princeton.edu/titles/9072.html) This effect of reverse disrimination could lead to inequality between man and women based on effort and not on preferences as it was the case previously.
+
+What is the impact of the wage gap on the economy in the United States?
+-
+
+A study found dat American women make 1.200.000 dollars less in the course of a 35 year career. Closing the wage gap could induce women to work more as they make up for 80% of the population of welfare reciepients and 70% of Medicaid. This would lead to an increase of the GDP in the United States by 3% to 4%. This is significant when compared to Barrack Obama's stimilus package. This 800 billion dollar bill lead to an increase of the GDP by 1.4% [#] (http://www.aauw.org/GraduatetoaPayGap/upload/AAUWGraduatingtoaPayGapReport.pdf) [#] (http://www.huffingtonpost.com/2012/10/24/gender-wage-gap-economic-stimulus_n_2007588.html) The wage desparity also continues in the retirement stages, where women recieve just above 70% of the benefits of male retirees. [#] (http://www.jec.senate.gov/public/_cache/files/f6fda396-2623-4e99-817e-bf9387360326/equal-pay-day-2011final.pdf)
+
 
 Can policy makers in the United States close the wage gap?
 -
