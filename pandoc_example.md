@@ -67,7 +67,9 @@ Company size and culture also matters. Affirmative action is a policy which resu
 How did the wage gap change over years?
 - 
 Over time traditinal households were fading away and more women decided to join the workforce as the 70's inspired women to feel free and focus more on their own lives. In the following graph you can see the increase of the female workforce in full-time jobs. [#] (http://www.econlib.org/library/Enc/GenderGap.html)
+
 ![#](http://www.econlib.org/library/Enc/art/lfHendersonCEE2_figure_025.jpg)
+
 The wage gap is represented below. It is positive related to the percentage of full-time women in the workforce. Although no data exsist for any date before the 1950's. There is a correlation present between the two phenomena. 
 ![#](http://www.econlib.org/library/Enc/art/lfHendersonCEE2_figure_026.jpg)
 
