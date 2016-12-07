@@ -1,10 +1,18 @@
-### Labor market discrimination in the United States Canon <span style="color:red"></span>
+###### _*Labor market discrimination in the United States Canon*_ <span style="color:red"></span>
 ===================================================
 
 
 ![](https://www.atlasnetwork.org/assets/uploads/news-main/_detail/wage_gap.png)
 
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
 In the era of social media, many issues are brought into the limelight. One of the current issues in our sociaties is sexism. This conflict is often brought into the public eye as a behavioral issue or a progressive movement. However not a lot is said about the economical side of the issue. In 2013, The US president Barrack Obama issued the following statement about the gender wage gap *''Over the course of her career, a working woman with a college degree will earn on average ahundreds of thousands of dollars less than a man who does the same work''.* This statement sparkerd a lot of conroversy due to its false nature. But how does the market actually look like and is there an even playing field? [#] (https://www.youtube.com/watch?v=-WWzELjRfWA)
 --------
