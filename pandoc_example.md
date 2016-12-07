@@ -1,7 +1,13 @@
-# _**Labor market discrimination in the United States Canon**_ <span style="color:red"></span>
+**Labor market discrimination in the United States**
 ==================================================
-
-
+_A Labor Economic Canon_
+-------     ------ ----------   -------
+    Angel Rousev        582598
+    Tilburg University  7-12-16
+    Applied Economic Analysis 1  
+    Assigned By Proff. dr. J.A. Smulders     
+    
+    
 ![](https://www.atlasnetwork.org/assets/uploads/news-main/_detail/wage_gap.png)
 
  
