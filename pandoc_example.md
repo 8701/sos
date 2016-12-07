@@ -43,7 +43,7 @@ http://scholar.harvard.edu/files/goldin/files/dynamics_of_the_gender_gap_for_you
 
 
 
-
+ 
 female's unadjusted annual salary has been cited as 78%[2] to 82%[3] of that of the average male. However, multiple studies from OECD, AAUW, and the US Department of Labor have found that pay rates between males and females varied by 5–6.6% or, females earning 94 cents to every dollar earned by their male counterparts, when wages were adjusted for different individual choices made by male and female workers in college major, occupation, working hours, and maternal/paternal leave. The remaining 6% of the gap has been speculated to originate from deficiency in salary negotiation skills and gender discrimination.[4][5][6][7]
 
 
