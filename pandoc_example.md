@@ -6,8 +6,9 @@ _A Labor Economic Canon_
     Tilburg University  7-12-16
     Applied Economic Analysis 1  
     Assigned By Proff. dr. J.A. Smulders     
-    
-    
+ 
+ 
+   
 ![](https://fortunedotcom.files.wordpress.com/2016/04/173291564.jpg?w=399)
 
  
