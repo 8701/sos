@@ -30,20 +30,20 @@ The wage gap is created by a simplistic model which takes into account the overa
 * Educations
 * Positions
 * Hours worked per week
+* Family expansion
 
 
-These omitted variables would explain the 20 cent on-the-dollar wage gap in te United States
+These omitted variables would explain the 20 cent on-the-dollar wage gap in te United States. There are several studies that confirm this bias towards a high wage gap. In 2009, MBA graduates from the Chigaco Business School from 1990 until 2006 were examined. On year out of businessschool women were making 115.000 dollars, while men earned 130.000 dollars. Eight years later women were earning 250.000 on average, while men were earning 400.000 dollars on average. However in the later years the differences evened out. The anomalies came due to childbirth. Females often do more than men in the household, have to burden themselves with carrying the child for 9 months and are required to stay shortly after the birth of their child. The Harvard study found that the wage gap was twice as large for women with children, compared to women without any children. [#] (http://scholar.harvard.edu/files/goldin/files/dynamics_of_the_gender_gap_for_young_professionals_in_the_financial_and_corporate_sectors.pdf)
 
-http://scholar.harvard.edu/files/goldin/files/dynamics_of_the_gender_gap_for_young_professionals_in_the_financial_and_corporate_sectors.pdf
-
-
-
-
+Claudia Goldin, a Harvard researcher, examined the differences gender pay gaps within occupations. [#] (https://scholar.harvard.edu/files/goldin/files/goldin_aeapress_2014_1.pdf) She found out that jobs in the business-sector were more seceptible to larger wage gaps. This is explained by the working hours needed for most of these jobs. Some clients might need more care than others and this could lead to a deviation from the standard nine to five system. As mentioned previously, children require care and attention too and this is often the mothers resposibilty. The opposite effect is observed with the pharmacy-branche. In the modern-era, most pharmacies are owned by large companies and most of them operate on a 24 hour basis. Women can rotate their shifts, a nightshift could provide as much for the boss as a nine to five shift. In this sector there is a wage gap of 8%, a significant decrease from jobs with flexible schedules.
 
 
 
 
- 
+
+
+
+
 female's unadjusted annual salary has been cited as 78%[2] to 82%[3] of that of the average male. However, multiple studies from OECD, AAUW, and the US Department of Labor have found that pay rates between males and females varied by 5–6.6% or, females earning 94 cents to every dollar earned by their male counterparts, when wages were adjusted for different individual choices made by male and female workers in college major, occupation, working hours, and maternal/paternal leave. The remaining 6% of the gap has been speculated to originate from deficiency in salary negotiation skills and gender discrimination.[4][5][6][7]
 
 
