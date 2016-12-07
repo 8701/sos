@@ -51,3 +51,22 @@ There is evidence for discrimination towards females. This is due to statistical
 
 Customers have a preference to get served by male individuals, they would pay higher prices when served by males rather than if they were to get served by females. This would lead to unprofitability when female presence is apparent, which causes employers to hire men more often than women. Male employees in turn want to get a compensation when working with women because wages would be lower when there is a female presence. Adding just one female could influence the wages in such a way that the optimal allocation of workforce becomes a separation between man and women. Segregation causes a separate male and female workplace, which causes a gap between wages. Employers could also simply prefer male employees, based on a bias they have on males and females on the workforce.  (#) (https://books.google.nl/books?hl=en&lr=&id=50qHcSNVVEMC&oi=fnd&pg=PP7&dq=becker+discrimination&ots=EQmTMbevEq&sig=3XJrYLRl8wX9xo19PeshqUQrs7c#v=onepage&q=becker%20discrimination&f=false)  Goldin and Rouse point out in a study, a phenomenon where males are preferred over women. However there is no difference if the characteristics of being a male and female are hidden, thus forcing employers to judge the applicant based on its skills. This explains the employers' preferences for men over women. (#) (http://www.nber.org/papers/w5903)
 Company size and culture also matters. Affirmative action is a policy which resulted by government regulation that made sure that minorities would get hired. Women got hired more often than without affirmative action. The effect was significant, as it increased the amount of women in male dominated jobs by 8% to 20%.  (#) (https://www.dol.gov/general/topic/hiring/affirmativeact) (#) (http://ideas.time.com/2013/06/17/affirmative-action-has-helped-white-women-more-than-anyone/) Affermative action could also have some discriminatory effect itself. A study has shown that minorities under affermative action needed lower SAT-scores to get accepted for the same position. (#) (http://press.princeton.edu/titles/9072.html) This effect of reverse disrimination could lead to inequality between man and women based on effort and not on preferences as it was the case previously.
+
+Can policy makers in the United States close the wage gap?
+-
+There are several ways to help bridge the wage gap besides applying affirmative action. The Paycheck Fairness Act could provide improvements to the Equal Pay Act. (#) (https://www.govtrack.us/congress/bills/114/s862/summary) (#) (https://www.eeoc.gov/laws/statutes/epa.cfm) The Equal Pay Act has not recieved an update since 1963. Supporters of this bill point out that it lead to closing the wage gap from 62% to 80%. However recent evidence suggest that men prefer more blue collar jobs and are more likely to participate in STEM (Science, technology, engineering and mathematics) fields than women. STEM jobs have more working hours and higher salaries. The actual wage gap lies around 7%, when controlled for these omitted variables. One of the priorities of policy makers could be to incentivice young girls towards STEM-related career paths.  The Paycheck Fairness Act's core was to train women to negotiate their wages and to punish employees for openly discriminating on the wages based on their employees sex. These legistlations are outdated as this has become the standard for men and women alike. New reforms should be implemented which take into account individual choices made by both male and female employees and perhaps making some jobs more family friendly in term of benefits.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
