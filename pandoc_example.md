@@ -50,7 +50,7 @@ Claudia Goldin, a Harvard researcher, examined the differences gender pay gaps w
 
 Dr Warren Farrel examines the marriage gap and illustrates the effect which marriage has on the wage gap. The weekly earnings gap goes from 608 dollars for single men and 577 dollars for single women, to 936 for married men and 708 for married women. This takes into account the unpaid hours worked at home, in which the wife has a more dominant precense. [#] (https://zhenles.files.wordpress.com/2013/03/farrell-why-men-earn-more-the-startling-truth-behind-the-pay-gap-and-what-women-can-do-about-it.pdf) Differences in occupations were also explained. Mathemetics, IT,  Architecture, Enginering and Chief Executive jobs were dominated by men with a 3 to 1 ratio. However Healthcare and Education were dominated by women with a 3 to 1 ratio. The jobs dominated by men however, were higher paid jobs. Individuals within these occupations were earning 36% more than ones in Healthcare or Education. Men also work more hours. 25% of women work part-time compared to 12% with males. Men also work more overtime hours with 22% percent, compared to the 11% of females. The United States requires employers to pay their employees at least 1.5 times as much if they work overtime, which widens the wage gap even further. [#] (https://www.dol.gov/whd/overtime_pay.html) 
 
-Results of Blinder-Oaxaca Decomposition analysis shows that the wage gap was decreased by increasing the experience in the labor market, increasing the workng hours and increasing the years of education recieved. This confirms the theory that ommited variables based on preferences and the number of working hours are the dominant factor in driving the wage gap. [#] (http://www.aabri.com/manuscripts/08076.pdf)
+Results of q Blinder-Oaxaca decomposition analysis shows that the wage gap was decreased by increasing the experience in the labor market, increasing the workng hours and increasing the years of education recieved. This confirms the theory that ommited variables based on preferences and the number of working hours are the dominant factor in driving the wage gap. [#] (http://www.aabri.com/manuscripts/08076.pdf)
 
 Could there be any discrimination against women on the labor market?
 --------
@@ -63,6 +63,20 @@ There is evidence for discrimination towards females. This is due to statistical
 Customers have a preference to get served by male individuals, they would pay higher prices when served by males rather than if they were to get served by females. This would lead to unprofitability when female presence is apparent, which causes employers to hire men more often than women. Male employees in turn want to get a compensation when working with women because wages would be lower when there is a female presence. Adding just one female could influence the wages in such a way that the optimal allocation of workforce becomes a separation between man and women. Segregation causes a separate male and female workplace, which causes a gap between wages. Employers could also simply prefer male employees, based on a bias they have on males and females on the workforce.  [#] (https://books.google.nl/books?hl=en&lr=&id=50qHcSNVVEMC&oi=fnd&pg=PP7&dq=becker+discrimination&ots=EQmTMbevEq&sig=3XJrYLRl8wX9xo19PeshqUQrs7c#v=onepage&q=becker%20discrimination&f=false)  Goldin and Rouse point out in a study, a phenomenon where males are preferred over women. However there is no difference if the characteristics of being a male and female are hidden, thus forcing employers to judge the applicant based on its skills. This explains the employers' preferences for men over women. [#] (http://www.nber.org/papers/w5903)
 Company size and culture also matters. Affirmative action is a policy which resulted by government regulation that made sure that minorities would get hired. Women got hired more often than without affirmative action. The effect was significant, as it increased the amount of women in male dominated jobs by 8% to 20%.  [#] (https://www.dol.gov/general/topic/hiring/affirmativeact) [#] (http://ideas.time.com/2013/06/17/affirmative-action-has-helped-white-women-more-than-anyone/) Affermative action could also have some discriminatory effect itself. A study has shown that minorities under affermative action needed lower SAT-scores to get accepted for the same position. [#] (http://press.princeton.edu/titles/9072.html) This effect of reverse disrimination could lead to inequality between man and women based on effort and not on preferences as it was the case previously.
 
+
+How did the wage gap change over years?
+- 
+Over time traditinal households were fading away and more women decided to join the workforce as the 70's inspired women to feel free and focus more on their own lives. In the following graph you can see the increase of the female workforce in full-time jobs. [#] (http://www.econlib.org/library/Enc/GenderGap.html)
+![#](http://www.econlib.org/library/Enc/art/lfHendersonCEE2_figure_025.jpg)
+The wage gap is represented below. It is positive related to the percentage of full-time women in the workforce. Although no data exsist for any date before the 1950's. There is a correlation present between the two phenomena. 
+![#](http://www.econlib.org/library/Enc/art/lfHendersonCEE2_figure_026.jpg)
+
+How does maternaty leave impact the workforce?
+- 
+
+
+
+
 What is the impact of the wage gap on the economy in the United States?
 -
 
@@ -73,7 +87,6 @@ Can policy makers in the United States close the wage gap?
 -
 There are several ways to help bridge the wage gap besides applying affirmative action. The Paycheck Fairness Act could provide improvements to the Equal Pay Act. [#] (https://www.govtrack.us/congress/bills/114/s862/summary) [#] (https://www.eeoc.gov/laws/statutes/epa.cfm) The Equal Pay Act has not recieved an update since 1963. Supporters of this bill point out that it lead to closing the wage gap from 62% to 80%. However recent evidence suggest that men prefer more blue collar jobs and are more likely to participate in STEM (Science, technology, engineering and mathematics) fields than women. STEM jobs have more working hours and higher salaries. The actual wage gap lies around 7%, when controlled for these omitted variables. The Lilly Ledbetter Fair Pay Act of 2009, was a legistlation signed by Barack Obama, which gave the oppertunity to women to revieve 6 months worth of salary, if discriminatory practicices targeting them were found. However this is not a solution, nor a step in the right direction. This is simply an outdated lawsuit practice, which might threaten employers to not deviate from the contents of The Equal Pay Act, but does not push women forward. [#] (https://www.eeoc.gov/eeoc/publications/brochure-equal_pay_and_ledbetter_act.cfm) One of the priorities of policy makers could be to incentivice young girls towards STEM-related career paths.  The Paycheck Fairness Act's core was to train women to negotiate their wages and to punish employees for openly discriminating on the wages based on their employees sex. These legistlations are outdated as this has become the standard for men and women alike. New reforms should be implemented which take into account individual choices made by both male and female employees and perhaps making some jobs more family friendly in term of benefits. 
 
-Other 
 
 
 
