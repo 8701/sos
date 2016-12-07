@@ -37,13 +37,34 @@ These omitted variables would explain the 20 cent on-the-dollar wage gap in te U
 
 Claudia Goldin, a Harvard researcher, examined the differences gender pay gaps within occupations. [#] (https://scholar.harvard.edu/files/goldin/files/goldin_aeapress_2014_1.pdf) She found out that jobs in the business-sector were more seceptible to larger wage gaps. This is explained by the working hours needed for most of these jobs. Some clients might need more care than others and this could lead to a deviation from the standard nine to five system. As mentioned previously, children require care and attention too and this is often the mothers resposibilty. The opposite effect is observed with the pharmacy-branche. In the modern-era, most pharmacies are owned by large companies and most of them operate on a 24 hour basis. Women can rotate their shifts, a nightshift could provide as much for the boss as a nine to five shift. In this sector there is a wage gap of 8%, a significant decrease from jobs with flexible schedules.
 
-Dr Warren Farrel examines the marriage gap and illustrates the effect which marriage has on the wage gap. The weekly earnings gap goes from 608 dollars for single men and 577 dollars for single women, to 936 for married men and 708 for married women. This takes into account the unpaid hours worked at home, in which the wife has a more dominant precense. [#] (https://zhenles.files.wordpress.com/2013/03/farrell-why-men-earn-more-the-startling-truth-behind-the-pay-gap-and-what-women-can-do-about-it.pdf) Differences in occupations were also explained. Mathemetics, IT,  Architecture, Enginering and Chief Executive jobs were dominated by men with a 3 to 1 ratio. However Healthcare and Education were dominated by women with a 3 to 1 ratio. The jobs dominated by men however, were higher paid jobs. Individuals within these occupations were earning 36% more than ones in Healthcare or Education. Men also work more hours. 25% of women work part-time compared to 12% with males. Men also work more overtime hours with 22% percent, compared to the 11% of females.
+Dr Warren Farrel examines the marriage gap and illustrates the effect which marriage has on the wage gap. The weekly earnings gap goes from 608 dollars for single men and 577 dollars for single women, to 936 for married men and 708 for married women. This takes into account the unpaid hours worked at home, in which the wife has a more dominant precense. [#] (https://zhenles.files.wordpress.com/2013/03/farrell-why-men-earn-more-the-startling-truth-behind-the-pay-gap-and-what-women-can-do-about-it.pdf) Differences in occupations were also explained. Mathemetics, IT,  Architecture, Enginering and Chief Executive jobs were dominated by men with a 3 to 1 ratio. However Healthcare and Education were dominated by women with a 3 to 1 ratio. The jobs dominated by men however, were higher paid jobs. Individuals within these occupations were earning 36% more than ones in Healthcare or Education. Men also work more hours. 25% of women work part-time compared to 12% with males. Men also work more overtime hours with 22% percent, compared to the 11% of females. The United States requires employers to pay their employees at least 1.5 times as much if they work overtime, which widens the wage gap even further. [#] (https://www.dol.gov/whd/overtime_pay.html) 
 
 
 Could there be any discrimination against women on the labor market?
 --------
 
-There are several theories to suggest that discrimination could be present in the labor market. 
+There is evidence for discrimination towards females. This is due to statistical discrimination or taste-based discrimination.  Taste-based discrimination covers the discriminatory viewpoints of:
+* Customers
+*  Employees
+*  Employers
+
+Customers have a preference to get served by male individuals, they would pay higher prices when served by males rather than if they were to get served by females. This would lead to unprofitability when female presence is apparent, which causes employers to hire men more often than women. Male employees in turn want to get a compensation when working with women because wages would be lower when there is a female presence. Adding just one female could influence the wages in such a way that the optimal allocation of workforce becomes a separation between man and women. Segregation causes a separate male and female workplace, which causes a gap between wages. Employers could also simply prefer male employees, based on a bias they have on males and females on the workforce.  (#) (https://books.google.nl/books?hl=en&lr=&id=50qHcSNVVEMC&oi=fnd&pg=PP7&dq=becker+discrimination&ots=EQmTMbevEq&sig=3XJrYLRl8wX9xo19PeshqUQrs7c#v=onepage&q=becker%20discrimination&f=false)  Goldin and Rouse point out in a study, a phenomenon where males are preferred over women. However there is no difference if the characteristics of being a male and female are hidden, thus forcing employers to judge the applicant based on its skills. This explains the employers' preferences for men over women. (#) (http://www.nber.org/papers/w5903)
+Company size and culture also matters. Affirmative action is a policy which resulted by government regulation that made sure that minorities would get hired. Women got hired more often  (#) (https://www.dol.gov/general/topic/hiring/affirmativeact)
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
