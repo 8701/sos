@@ -40,7 +40,10 @@ Claudia Goldin, a Harvard researcher, examined the differences gender pay gaps w
 Dr Warren Farrel examines the marriage gap and illustrates the effect which marriage has on the wage gap. The weekly earnings gap goes from 608 dollars for single men and 577 dollars for single women, to 936 for married men and 708 for married women. This takes into account the unpaid hours worked at home, in which the wife has a more dominant precense. [#] (https://zhenles.files.wordpress.com/2013/03/farrell-why-men-earn-more-the-startling-truth-behind-the-pay-gap-and-what-women-can-do-about-it.pdf) Differences in occupations were also explained. Mathemetics, IT,  Architecture, Enginering and Chief Executive jobs were dominated by men with a 3 to 1 ratio. However Healthcare and Education were dominated by women with a 3 to 1 ratio. The jobs dominated by men however, were higher paid jobs. Individuals within these occupations were earning 36% more than ones in Healthcare or Education. Men also work more hours. 25% of women work part-time compared to 12% with males. Men also work more overtime hours with 22% percent, compared to the 11% of females.
 
 
+Could there be any discrimination against women on the labor market?
+--------
 
+There are several theories to suggest that discrimination could be present in the labor market. 
 
 
 
