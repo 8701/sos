@@ -1,10 +1,52 @@
-Labor market discrimination Canon <span style="color:red"></span>
+Labor market discrimination in the United States Canon <span style="color:red"></span>
 ===================================================
+
+
 
 ![](https://www.atlasnetwork.org/assets/uploads/news-main/_detail/wage_gap.png)
 
-In the era of social media, many issues are brought into the limelight. One of the current issues in our sociaties are racism and sexism. These conflicts are often brought into the public eye as a behavioral issue or a progressive movement. However not a lot is said about the economical side of the issue. In 2013, The US president Barrack Obama issued the following statement about the gender wage gap *''Over the course of her career, a working woman with a college degree will earn on average hundreds of thousands of dollars less than a man who does the same work''.* This statement sparkerd a lot of conroversy due to its false nature. But how does the market actually look like and is there an even playing field? [#] (https://www.youtube.com/watch?v=-WWzELjRfWA)
+
+
+In the era of social media, many issues are brought into the limelight. One of the current issues in our sociaties is sexism. This conflict is often brought into the public eye as a behavioral issue or a progressive movement. However not a lot is said about the economical side of the issue. In 2013, The US president Barrack Obama issued the following statement about the gender wage gap *''Over the course of her career, a working woman with a college degree will earn on average ahundreds of thousands of dollars less than a man who does the same work''.* This statement sparkerd a lot of conroversy due to its false nature. But how does the market actually look like and is there an even playing field? [#] (https://www.youtube.com/watch?v=-WWzELjRfWA)
 --------
+
+
+
+How big is the wage gap in the United States?
+--------
+
+The average gap between male and female salaries has been indicated to be around the 80% as the follwing table suggests.
+
+![](http://www.aauw.org/files/2016/09/the-simple-truth-figure-2-v2.jpg)
+
+However a study by Payscale [#] (http://www.payscale.com/career-news/2013/04/fallacy-of-the-gender-wage-gap) found a 2% difference in the wage gap between men and women. Most economists tend to agree with the notion that the wage gap is almost non-existing and that is has to do with multiple factors. 
+
+What makes up the wages gap?
+--------
+
+The wage gap is created by a simplistic model which takes into account the overal earnings of men and women accross the United States. However the wage gap does not take into account differences in :
+
+* Occcupations
+* Educations
+* Positions
+* Hours worked per week
+
+
+These omitted variables would explain the 20 cent on-the-dollar wage gap in te United States
+
+http://scholar.harvard.edu/files/goldin/files/dynamics_of_the_gender_gap_for_young_professionals_in_the_financial_and_corporate_sectors.pdf
+
+
+
+
+
+
+
+
+
+female's unadjusted annual salary has been cited as 78%[2] to 82%[3] of that of the average male. However, multiple studies from OECD, AAUW, and the US Department of Labor have found that pay rates between males and females varied by 5–6.6% or, females earning 94 cents to every dollar earned by their male counterparts, when wages were adjusted for different individual choices made by male and female workers in college major, occupation, working hours, and maternal/paternal leave. The remaining 6% of the gap has been speculated to originate from deficiency in salary negotiation skills and gender discrimination.[4][5][6][7]
+
+
 
 
 The world of finance has been thoroughly disrupted by the technology of the decentralized blockchain. This disruption, however, is incomplete; while cryptocurrencies have revolutionized the way wealth is transferred, one obstacle has been holding them back from their true potential. The problem lies in the current reliance on centralized exchanges.
