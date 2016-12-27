@@ -70,6 +70,7 @@ Over time traditional households were fading away and more women decided to join
 ![#](http://www.econlib.org/library/Enc/art/lfHendersonCEE2_figure_025.jpg)
 
 The wage gap is represented below. The ratio of female-to-male median earnings for full time workers is displayed along the y-axes. The x-axis shows the time over a period in decades. The graph is positive related to the percentage of full-time women in the workforce. Although no data exists for any date before the 1950's. There is a correlation present between the two phenomena. 
+
 ![#](http://www.econlib.org/library/Enc/art/lfHendersonCEE2_figure_026.jpg)
 
 How does maternity leave impact the workforce?
