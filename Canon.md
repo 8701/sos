@@ -52,7 +52,7 @@ Claudia Goldin, a Harvard researcher, examined the differences gender pay gaps w
 
 Dr Warren Farrel examines the marriage gap and illustrates the effect which marriage has on the wage gap. The weekly earnings gap goes from 31 dollars, 608 dollars for single men and 577 dollars for single women, to 228 dollars, 936 for married men and 708 for married women. This takes into account the unpaid hours worked at home, in which the wife has a more dominant presence. [#] (https://zhenles.files.wordpress.com/2013/03/farrell-why-men-earn-more-the-startling-truth-behind-the-pay-gap-and-what-women-can-do-about-it.pdf) Differences in occupations were also explained. Mathematics, IT,  Architecture, Engineering and Chief Executive jobs were dominated by men with a 3 to 1 ratio. However, Healthcare and Education were dominated by women with a 3 to 1 ratio. The jobs dominated by men however, were higher paid jobs. Individuals within these occupations were earning 36% more than ones in Healthcare or Education. Men also work more hours. 25% of women work part-time compared to 12% with males. Men also work more overtime hours with 22% percent, compared to the 11% of females. The United States requires employers to pay their employees at least 1.5 times as much if they work overtime, which widens the wage gap even further. [#] (https://www.dol.gov/whd/overtime_pay.html) 
 
-Results of q Blinder-Oaxaca decomposition analysis shows that the wage gap was decreased by increasing the experience in the labor market, increasing the working hours and increasing the years of education received. This confirms the theory that omitted variables based on preferences and the number of working hours are the dominant factor in driving the wage gap. [#] (http://www.aabri.com/manuscripts/08076.pdf)
+Results of a Blinder-Oaxaca decomposition analysis shows that the wage gap was decreased by increasing the experience in the labor market, increasing the working hours and increasing the years of education received. This confirms the theory that omitted variables based on preferences and the number of working hours are the dominant factor in driving the wage gap. [#] (http://www.aabri.com/manuscripts/08076.pdf)
 
 Could there be any discrimination against women on the labor market?
 --------
@@ -67,7 +67,7 @@ How did the wage gap change over years?
 - 
 Over time traditional households were fading away and more women decided to join the workforce as the 70's inspired women to feel free and focus more on their own lives. In the following graph you can see the increase of the female workforce in full-time jobs. [#] (http://www.econlib.org/library/Enc/GenderGap.html)
 
-![#](http://www.econlib.org/library/Enc/art/lfHendersonCEE2_figure_025.jpg)
+![#](http://www.econlib.org/library/Enc/art/lfHendersonCEE2_figure_025.jpg) Labor Force Participation In Full Time Jobs over years
 
 The wage gap is represented below. It is positive related to the percentage of full-time women in the workforce. Although no data exists for any date before the 1950's. There is a correlation present between the two phenomena. 
 ![#](http://www.econlib.org/library/Enc/art/lfHendersonCEE2_figure_026.jpg)
