@@ -21,7 +21,7 @@ _A Labor Economic Canon_
  
  
 
-In the era of social media, many issues are brought into the limelight. One of the current issues in our societies is sexism. This conflict is often brought into the public eye as a behavioral issue or a progressive movement. However not a lot is said about the economical side of the issue. In 2013, The US president Barrack Obama issued the following statement about the gender wage gap *''Over the course of her career, a working woman with a college degree will earn on average hundreds of thousands of dollars less than a man who does the same work''.* This statement sparked a lot of controversy due to its false nature. But how does the market actually look like and is there an even playing field? [#] (https://www.youtube.com/watch?v=-WWzELjRfWA)
+In the era of social media, many issues are brought into the limelight. One of the current issues in our societies is sexism. This conflict is often brought into the public eye as a behavioral issue or a progressive movement. However not a lot is said about the economical side of the issue. In 2013, The US president Barrack Obama issued the following statement about the gender wage gap *''Over the course of her career, a working woman with a college degree will earn on average hundreds of thousands of dollars less than a man who does the same work''.* This statement sparked a lot of controversy due to it context, depecting a field where every women earns 20% less without dicussing the valadity of the economics behind it. But how does the market actually look like and is there an even playing field? [#] (https://www.youtube.com/watch?v=-WWzELjRfWA)
 --------
 
 
@@ -40,7 +40,8 @@ The average gap between male and female salaries has been indicated to be around
 
 ![](http://www.aauw.org/files/2016/09/the-simple-truth-figure-2-v2.jpg)
 
-However, a study by Payscale [#] (http://www.payscale.com/career-news/2013/04/fallacy-of-the-gender-wage-gap) found a 2% difference in the wage gap between men and women. Most economists tend to agree with the notion that the wage gap is almost non-existing and that is has to do with multiple factors. 
+However, a study by Payscale [#] (http://www.payscale.com/career-news/2013/04/fallacy-of-the-gender-wage-gap) found a 2% difference in the wage gap between men and women, rather than the 20% wage gap depicted true the Cencus Bureau datam making the wage gap virtually nonexistent. This difference occurs when various variables are omitted. The government data works on averages and does not include factors like, career choices, education, experience or any other factor which may contribute to an individuals pay.
+
 
 What makes up the wages gap?
 --------
