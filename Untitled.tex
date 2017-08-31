@@ -1,0 +1,1158 @@
+
+% Default to the notebook output style
+
+    
+
+
+% Inherit from the specified cell style.
+
+
+
+
+    
+\documentclass[11pt]{article}
+
+    
+    
+    \usepackage[T1]{fontenc}
+    % Nicer default font (+ math font) than Computer Modern for most use cases
+    \usepackage{mathpazo}
+
+    % Basic figure setup, for now with no caption control since it's done
+    % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
+    \usepackage{graphicx}
+    % We will generate all images so they have a width \maxwidth. This means
+    % that they will get their normal width if they fit onto the page, but
+    % are scaled down if they would overflow the margins.
+    \makeatletter
+    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+    \else\Gin@nat@width\fi}
+    \makeatother
+    \let\Oldincludegraphics\includegraphics
+    % Set max figure width to be 80% of text width, for now hardcoded.
+    \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
+    % Ensure that by default, figures have no caption (until we provide a
+    % proper Figure object with a Caption API and a way to capture that
+    % in the conversion process - todo).
+    \usepackage{caption}
+    \DeclareCaptionLabelFormat{nolabel}{}
+    \captionsetup{labelformat=nolabel}
+
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
+    \usepackage{xcolor} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{textcomp} % defines textquotesingle
+    % Hack from http://tex.stackexchange.com/a/47451/13684:
+    \AtBeginDocument{%
+        \def\PYZsq{\textquotesingle}% Upright quotes in Pygmentized code
+    }
+    \usepackage{upquote} % Upright quotes for verbatim code
+    \usepackage{eurosym} % defines \euro
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range 
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage[inline]{enumitem} % IRkernel/repr support (it uses the enumerate* environment)
+    \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
+                                % normalem makes italics be italics, not underlines
+    
+
+    
+    
+    % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+
+    % ANSI colors
+    \definecolor{ansi-black}{HTML}{3E424D}
+    \definecolor{ansi-black-intense}{HTML}{282C36}
+    \definecolor{ansi-red}{HTML}{E75C58}
+    \definecolor{ansi-red-intense}{HTML}{B22B31}
+    \definecolor{ansi-green}{HTML}{00A250}
+    \definecolor{ansi-green-intense}{HTML}{007427}
+    \definecolor{ansi-yellow}{HTML}{DDB62B}
+    \definecolor{ansi-yellow-intense}{HTML}{B27D12}
+    \definecolor{ansi-blue}{HTML}{208FFB}
+    \definecolor{ansi-blue-intense}{HTML}{0065CA}
+    \definecolor{ansi-magenta}{HTML}{D160C4}
+    \definecolor{ansi-magenta-intense}{HTML}{A03196}
+    \definecolor{ansi-cyan}{HTML}{60C6C8}
+    \definecolor{ansi-cyan-intense}{HTML}{258F8F}
+    \definecolor{ansi-white}{HTML}{C5C1B4}
+    \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatability definitions
+    \def\gt{>}
+    \def\lt{<}
+    % Document parameters
+    \title{Untitled}
+    
+    
+    
+
+    % Pygments definitions
+    
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@fm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sa\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@dl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % Exact colors from NB
+    \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+    \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
+
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+    \begin{document}
+    
+    
+    \maketitle
+    
+    
+
+    
+    \#
+
+{Battle of the contracts: Employment in the modern economy}
+
+    \begin{longtable}[]{@{}ll@{}}
+\toprule
+Name & ANR\tabularnewline
+\midrule
+\endhead
+Angel Rousev & 582598\tabularnewline
+\bottomrule
+\end{longtable}
+
+    \#\#
+
+{Question}
+
+\textbf{\emph{Do temporary contracts harm employment?}}
+
+    \#\#
+
+{Motivation}
+
+\begin{verbatim}
+EAnyone between the ages of 15 and 65, is considered to be part of the national labor force. On employment, they face economic cycles and different legal amendments, which contribute to the employment figures and the state of employment contracts.  [The latest trend](https://observatoriosociallacaixa.org/documents/22890/80956/ART6_ENG_Graph1.jpg/3605c46d-3bff-4765-bc26-9d8a438fa156?t=1473783305328 "Wordwide Laborcontract Trend") shows a rise in flexible/temporary contracts. This in term causes the number of permanent contracts to go down, which deceases stability in the job market.  Does this help society to will this prevent more and more employees to garner any form of permanent contract, thus hurting employment?  </div>
+\end{verbatim}
+
+    \#\#
+
+{Brief introduction}
+
+\begin{verbatim}
+In the first part, the impact on the labor market due to the change in contracts will be examined. This will cover the institution and the effects on policy. Second will be the latest situation in The Netherlands with regard to the change in contracts. In the third part, the motion of a new policy, will be discussed. This will include the state of the motion and the residuum of that motion.          </div>
+\end{verbatim}
+
+    \#\#
+
+{Data}
+
+The transformed national data will be recovered from
+\href{http://statline.cbs.nl/StatWeb/publication/?VW=T\&DM=SLNL\&PA=70072ned\&D1=0-118\&D2=0,12\&D3=14-15\&HD=100914-1525\&HDR=T\&STB=G1,G2}{CBS's
+Statline} The notebook will further cover theory and policy implications
+derived from the data and trends within the labor market
+
+    \#\#
+
+{Theory of institution}
+
+This part will cover the theory about the EPL, the Employment Protection
+Legislation 1*
+
+The EPL is a system of procedure which protects employees from premature
+job-loss, i.e. getting fired. It covers temporary/flexible contracts,
+permanent contracts and collective dismissal in a macro causal domain.
+The EPL is measured as an indication which is a sum of the weighted
+averages of said indicators. For example, in the case of severance pay
+as shown below.
+
+    \[Severance Pay Indicator = {(9Months Tenure + 4Years Tenure + 20Years Tenure)/3)}\]
+\[Severance Pay Indicator = {(a + b + c)/3)}\]
+\[{With ((a,b,c)| ϵ  0,1,2,3,4,5,6))}\] Click
+\href{https://www.oecd.org/els/emp/EPL-Document-LAC-Methodology-ENG.pdf}{here}
+to see the full list of the official EPL indicators.
+
+    In figure 1, you can see the Netherlands having a higher than average
+permanent contract rate. This provides employees with job security. In
+the next part, the decline in permanent contracts will be shown. This
+trend has financial benefits for the employers and takes bargaining
+power away from employees. The shortcoming of the EPL, besides the fact
+that it is based on a survey, states nothing about actual enforcement of
+a dismissal.
+
+    {Figure 1}
+
+\includegraphics{https://image.ibb.co/mCPxMk/11.png}
+
+    Figure 2 shows a negative correlation between the transition or
+temporary/flexible workers to a permanent contract. Figure 3 further
+illustrates the GDP-relationship as it pertains to the labor contracts,
+which does not match previous EPL-statistics, meaning that the economy
+is forcing the rise of temporary/flexible contracts.
+
+    {Figure 2}
+
+\includegraphics{https://image.ibb.co/ip2C45/12.png}
+
+    {Figure 3}
+
+\includegraphics{https://image.ibb.co/jbVtBk/13.png}
+
+    There is also a phenomenon called the Honeymoon effect, which states
+that some flexibility serves as a buffer of the temporary/flexible
+contracts to replace permanent contracts. The next part of the notebook
+will focus on the employment on a national level and will display the
+evolution of the labor contracts within The Netherlands
+
+    \#\#
+
+{Empirical Evidence In The Netherlands}
+
+This part will illustrate the labor contracts and the labor market in
+The Netherlands. Figure 3 shows the distribution of labor contracts in
+The Netherlands. Figure 4 represents the dataset as presented from the
+CBS.
+
+\begin{verbatim}
+</div>
+\end{verbatim}
+
+    {Figure 3}
+
+\includegraphics{http://recruitmentmatters.nl/wp-content/uploads/2013/10/image93.png}
+
+    {Figure 4}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}98}]:} \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd}
+         \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt}
+         \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{dates} \PY{k}{as} \PY{n+nn}{mdates}
+         \PY{o}{\PYZpc{}}\PY{k}{matplotlib} inline
+         
+         \PY{n}{data} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{datasets/datasets/12.csv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{usecols}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Periode}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Toaal Werzame Personen}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Werknemer}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Werknemer met vaste arbeidsrelatie}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Werknemer met flexibele arbeidsrelatie}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{parse\PYZus{}dates}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Periode}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+         
+         \PY{n}{data}\PY{o}{.}\PY{n}{set\PYZus{}index}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Periode}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{n}{inplace}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}
+         
+         \PY{n}{fig}\PY{p}{,} \PY{n}{ax} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{subplots}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{12}\PY{p}{,}\PY{l+m+mi}{18}\PY{p}{)}\PY{p}{)}
+         \PY{n}{data}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{kind}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bar}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{ax}\PY{o}{=}\PY{n}{ax}\PY{p}{)}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}98}]:} <matplotlib.axes.\_subplots.AxesSubplot at 0x23d16e3de48>
+\end{Verbatim}
+        
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_17_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{verbatim}
+           The main law in The Netherlands that covers the labor contracts is ‘’De Wet Flexibiliteit en Zekerheid’’, also known as De Flexwet. Introduced in 1999, this law was meant to balance flexibility and job-security, thus creating stability within the power relationship of the employer and the employee. The law states that there can only be three temporary contracts offered within a span of three years. After the three-year period, the temporary/flexible contract automatically becomes a permanent contract.
+\end{verbatim}
+
+2015 was the year where new additions to De Flexwet were added. These
+were created to fight the increasing gap between both labor contracts.
+The law now stated that the change from a temporary/flexible contract to
+a permanent contract could be prevented if there was a period of six
+month in-between both contracts. Another key addition was the
+transformation from a temporary/flexible contract to a permanent
+contract, if an individual worked over 2 years. This would become a
+major issue, due to the countermeasure that was, firing the employee
+before the 2-year threshold was reached. The CNV counted 200 cases in
+2015 of these scenarios in The Netherlands. The same held true for the
+six-month threshold. Minister Asscher proposed a second change in 2015
+where a `'transitievergoeding'' was granted to employees, with contract
+terminations after the 2-year threshold. This would entail a one-third
+payment of their ex-wage and one-half if total tenure was under ten
+years, with a max of 76000 euros. A full wage would be paid for
+employees over 50, no matter the employment duration. Thus, De Flexwet
+is having the opposite effect and is damaging employees'' chances. This
+rise can be seen in figure 3 and in the following CBS dataset.
+
+    \#\#
+
+{Policy Analysis}
+
+The EPL seems to cause work-arounds to occur more often and make
+employers focus on a new time stamp for their employees' termination.
+Thus, it becomes clear that further and better protection is needed to
+cover the employees against these measures. In The Netherlands, income
+is guaranteed in some form when the worst scenario tends to occur, but
+job security is not tackled in the slightest. This would probably cause
+a rift between the principal and agent in this scenario, leading to less
+effort and investment from the now, anticipation employee. A scenario
+could also form where the buffer and the seasonal and cyclical changes,
+return to the original state. This would make it optimal for employers
+not to fire their employees as it will save several costs, including
+searching costs and loss on investment.
+
+An increase in the EPL causes fewer hiring's. One of the countries that
+has countered this problem in a way was Austria, which in 2003 replaced
+their dismissal payment system, which was based on tenure. Now employees
+have to pay a percentage of the payroll, which becomes a savings-account
+for the employee. This procedure ends when the contract comes to an end.
+This will serve as an income transfer measure when the contract would be
+terminated. If no such scenario would occur, the funds would transfer to
+the retirement fund of said individual.
+
+A great policy would be a form of tenure, where employees experience
+trust and safety in combination with the Austrian legislature amendment
+of 2003. This form of EPL has less negative effects to ones with a
+permanent contract and will clear up the 3-year threshold as seen in The
+Netherlands. Partial reforms could provoke create labor market
+dualities, thus a full reform would be beneficial.
+
+    \#\#
+
+{Conclusion}
+
+A change in policy is needed. Europe and The Netherlands in particular
+is facing job security threats from institutional loopholes. Thresholds
+are being broken and even retirement policies have been subjugated to
+these offenses (A diff-in-diff analysis of the effects on pension when a
+certain birthrate was applied as a treatment threshold). In order to
+make these preventive events happen a similar policy like in Austria has
+to be implemented, which creates a form of insurance for both parties.
+Governments fail to anticipate these events and employees should be
+trapped in a vortex of temporary/flexible contracts. One has the right
+to build up their career and be invested in the company in which they
+function. I'm afraid that training and investment will become
+meaningless and a job will become just a job for most.
+
+\begin{verbatim}
+</div>
+\end{verbatim}
+
+     1*
+
+{ Employment Practices Liability is an area of United States law that
+deals with wrongful termination, sexual harassment, discrimination,
+invasion of privacy, false imprisonment, breach of contract, emotional
+distress, and wage and hour law violations. Employment Practices
+Liability is part of professional liability. }
+
+    \#\#
+
+{References}
+
+Jenifer Ruiz-Valenzuela, (2016, September) Temporality, loss of work and
+educational performance. Centre for Economic Performance, London School
+of Economics. Retrieved from
+https://observatoriosociallacaixa.org/en/article/-/asset\_publisher/ATai9MyKZiYq/content/el-impacto-de-la-temporalidad-y-la-perdida-de-trabajo-parental-en-el-rendimiento-educativo-de-los-hijos/pop\_up
+Jabob, A. (2013). `'The Effect of Employment Protection on Teacher
+Effort''. Journal of Labor Ecocomics, 31(4): 727-761
+
+Schnalzenberger, M. and Winter-Ebme, R. `'Layoff tax and employment of
+the elderly''. Labor Economics, 16(6): 618-624
+
+Olsson, M. (2009). `'Employment protection and sickness absence''. Labor
+Economics, 16(2): 208-214 Employment protection legislation. (2015)
+Retrieved from
+http://ec.europa.eu/europe2020/pdf/themes/25\_employment\_protection\_legislation\_02.pd
+
+Wijzigingen Flexwet 2015. (2015) Retrieved from
+http://www.payrolltoday.nl/uploads/pdf/WIJZIGINGEN\_FLEXWET\_2015.pdf
+
+Drees, M. (2013) De flexibele schil in beeld. Retireved from
+http://recruitmentmatters.nl/2013/10/24/de-flexibele-schil-in-beeld-2/
+
+Driessen, M. and Lautenbach, H. (2012, December 12). Minder Werknemers
+Met Een Vast Conctract. CBS. Retrieved from
+https://www.cbs.nl/nl-nl/nieuws/2012/50/minder-werknemers-met-een-vast-contract
+
+Limmen, M. (2015, May 6) Werkgevers omzeilen www door flexkrachten te
+ontslaan. CNV. Retrieved from
+https://www.cnv.nl/actueel/nieuws/nieuwsdetail/werkgevers-omzeilen-wwz-door-flexkrachten-te-ontslaan/?L=0\%2F\&cHash=536a52bf52d90cf189cce000cee110ae
+
+Driessen, M. (2015, November 13) Positie werkkring en arbeidsduur:
+aantal vaste werknemers niet verder gedaald. CBS. Retrieved from
+https://www.cbs.nl/nl-nl/achtergrond/2015/46/positie-werkkring-en-arbeidsduur-aantal-vaste-werknemers-niet-verder-gedaald
+
+OECD (2004) OECD Employment Outlook 2004. ISBN: 9789264108134 (PDF)
+;9789264108127(print). DOI: 10.1787/empl\_outlook-2004-en Retrieved from
+http://www.oecd-ilibrary.org/employment/oecd-employment-outlook-
+2004\_empl\_outlook-2004-en Regionale kerncijfers Nederland. (2017)
+Retrieved from
+http://statline.cbs.nl/Statweb/publication/?DM=SLNL\&PA=70072ned\&D1=0-118\&D2=0,12\&D3=14-15\&HDR=T\&STB=G1,G2\&VW=C
+
+    \#\#
+
+{Code}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}69}]:} \PY{c+c1}{\PYZsh{} import modules}
+         \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}70}]:} \PY{c+c1}{\PYZsh{} Import the excel file and call it xls\PYZus{}file}
+         \PY{n}{xls\PYZus{}file} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{ExcelFile}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{datasets/datasets/examples.xls}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{xls\PYZus{}file}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}70}]:} <pandas.io.excel.ExcelFile at 0x23d16843cf8>
+\end{Verbatim}
+        
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}71}]:} \PY{c+c1}{\PYZsh{} View the excel file\PYZsq{}s sheet names}
+         \PY{n}{xls\PYZus{}file}\PY{o}{.}\PY{n}{sheet\PYZus{}names}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}71}]:} ['Werkzame\_beroepsbev.\_3008172034', 'Omschrijving']
+\end{Verbatim}
+        
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}72}]:} \PY{c+c1}{\PYZsh{} Load the xls file\PYZsq{}s Sheet1 as a dataframe}
+         \PY{n}{df} \PY{o}{=} \PY{n}{xls\PYZus{}file}\PY{o}{.}\PY{n}{parse}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Werkzame\PYZus{}beroepsbev.\PYZus{}3008172034}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{df}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}72}]:}    Werkzame beroepsbevolking; positie in de werkkring  \textbackslash{}
+         0                                                 NaN   
+         1                                                 NaN   
+         2                                                 NaN   
+         3                                            Geslacht   
+         4                            Totaal mannen en vrouwen   
+         5                            Totaal mannen en vrouwen   
+         6                            Totaal mannen en vrouwen   
+         7                            Totaal mannen en vrouwen   
+         8                                              Mannen   
+         9                                              Mannen   
+         10                                             Mannen   
+         11                                             Mannen   
+         12                                            Vrouwen   
+         13                                            Vrouwen   
+         14                                            Vrouwen   
+         15                                            Vrouwen   
+         
+                          Unnamed: 1                 Unnamed: 2  \textbackslash{}
+         0               Onderwerpen  Werkzame beroepsbevolking   
+         1         Persoonskenmerken            Totaal personen   
+         2   Positie in de werkkring                     Totaal   
+         3                  Perioden                    x 1 000   
+         4          2016 1e kwartaal                       8287   
+         5          2016 2e kwartaal                       8386   
+         6          2016 3e kwartaal                       8461   
+         7          2016 4e kwartaal                       8478   
+         8          2016 1e kwartaal                       4464   
+         9          2016 2e kwartaal                       4502   
+         10         2016 3e kwartaal                       4541   
+         11         2016 4e kwartaal                       4553   
+         12         2016 1e kwartaal                       3823   
+         13         2016 2e kwartaal                       3884   
+         14         2016 3e kwartaal                       3920   
+         15         2016 4e kwartaal                       3925   
+         
+                            Unnamed: 3                          Unnamed: 4  \textbackslash{}
+         0   Werkzame beroepsbevolking           Werkzame beroepsbevolking   
+         1             Totaal personen                     Totaal personen   
+         2                   Werknemer  Werknemer met vaste arbeidsrelatie   
+         3                     x 1 000                             x 1 000   
+         4                        6894                                5146   
+         5                        7000                                5163   
+         6                        7058                                5169   
+         7                        7047                                5155   
+         8                        3584                                2733   
+         9                        3615                                2729   
+         10                       3646                                2713   
+         11                       3655                                2731   
+         12                       3310                                2413   
+         13                       3385                                2435   
+         14                       3412                                2456   
+         15                       3392                                2424   
+         
+                                         Unnamed: 5  \textbackslash{}
+         0                Werkzame beroepsbevolking   
+         1                          Totaal personen   
+         2   Werknemer met flexibele arbeidsrelatie   
+         3                                  x 1 000   
+         4                                     1748   
+         5                                     1836   
+         6                                     1889   
+         7                                     1892   
+         8                                      851   
+         9                                      886   
+         10                                     933   
+         11                                     924   
+         12                                     897   
+         13                                     950   
+         14                                     956   
+         15                                     968   
+         
+                                     Unnamed: 6                              Unnamed: 7  
+         0            Werkzame beroepsbevolking               Werkzame beroepsbevolking  
+         1                      Totaal personen                         Totaal personen  
+         2   Werknemer met vaste arbeidsrelatie  Werknemer met flexibele arbeidsrelatie  
+         3                                    \%                                       \%  
+         4                             0.746446                                0.339681  
+         5                             0.737571                                0.355607  
+         6                              0.73236                                0.365448  
+         7                             0.731517                                0.367022  
+         8                             0.762556                                0.311379  
+         9                              0.75491                                0.324661  
+         10                            0.744103                                  0.3439  
+         11                            0.747196                                0.338338  
+         12                            0.729003                                0.371736  
+         13                             0.71935                                0.390144  
+         14                            0.719812                                0.389251  
+         15                            0.714623                                 0.39934  
+\end{Verbatim}
+        
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}73}]:} \PY{c+c1}{\PYZsh{} Figured out the Excel lay\PYZhy{}out would be problamatic. I then corrected for the upper cells and ran the CSV\PYZhy{}file.}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}74}]:} \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd}
+         \PY{n}{df1}\PY{o}{=}\PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{datasets/datasets/11.csv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{df1}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+                    Geslacht           Periode  Toaal Werzame Personen  \textbackslash{}
+0   Totaal mannen en vrouwen  2016 1e kwartaal                    8287   
+1   Totaal mannen en vrouwen  2016 2e kwartaal                    8386   
+2   Totaal mannen en vrouwen  2016 3e kwartaal                    8461   
+3   Totaal mannen en vrouwen  2016 4e kwartaal                    8478   
+4                     Mannen  2016 1e kwartaal                    4464   
+5                     Mannen  2016 2e kwartaal                    4502   
+6                     Mannen  2016 3e kwartaal                    4541   
+7                     Mannen  2016 4e kwartaal                    4553   
+8                    Vrouwen  2016 1e kwartaal                    3823   
+9                    Vrouwen  2016 2e kwartaal                    3884   
+10                   Vrouwen  2016 3e kwartaal                    3920   
+11                   Vrouwen  2016 4e kwartaal                    3925   
+
+    Werknemer  Werknemer met vaste arbeidsrelatie  \textbackslash{}
+0        6894                                5146   
+1        7000                                5163   
+2        7058                                5169   
+3        7047                                5155   
+4        3584                                2733   
+5        3615                                2729   
+6        3646                                2713   
+7        3655                                2731   
+8        3310                                2413   
+9        3385                                2435   
+10       3412                                2456   
+11       3392                                2424   
+
+    Werknemer met flexibele arbeidsrelatie  \textbackslash{}
+0                                     1748   
+1                                     1836   
+2                                     1889   
+3                                     1892   
+4                                      851   
+5                                      886   
+6                                      933   
+7                                      924   
+8                                      897   
+9                                      950   
+10                                     956   
+11                                     968   
+
+   Percentage werknemer met  vaste arbeidsrelatie  \textbackslash{}
+0                                          74.64\%   
+1                                          73.76\%   
+2                                          73.24\%   
+3                                          73.15\%   
+4                                          76.26\%   
+5                                          75.49\%   
+6                                          74.41\%   
+7                                          74.72\%   
+8                                          72.90\%   
+9                                          71.94\%   
+10                                         71.98\%   
+11                                         71.46\%   
+
+   Percentage werknemer met flexibele arbeidsrelatie  
+0                                             33.97\%  
+1                                             35.56\%  
+2                                             36.54\%  
+3                                             36.70\%  
+4                                             31.14\%  
+5                                             32.47\%  
+6                                             34.39\%  
+7                                             33.83\%  
+8                                             37.17\%  
+9                                             39.01\%  
+10                                            38.93\%  
+11                                            39.93\%  
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}75}]:} \PY{c+c1}{\PYZsh{} Including A label }
+\end{Verbatim}
+
+    \[x1000     =  {Totaal werkzame personen}\]
+
+\[x1000.1   =  {Werknemer}\]
+\[x1000.2   =  {Werknemer met vaste arbeidsrelatie}\]
+
+\[x1000.3   =  {Werknemer met flexibele arbeidsrelatie}\]
+\[Percentage   =  {Percentage werknemer met vaste arbeidsrelatie}\]
+\[Percentage1   =  {Percentage werknemer met flexibele arbeidsrelatie}\]
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}76}]:} \PY{n}{df1}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}76}]:}                     Geslacht           Periode  Toaal Werzame Personen  \textbackslash{}
+         0   Totaal mannen en vrouwen  2016 1e kwartaal                    8287   
+         1   Totaal mannen en vrouwen  2016 2e kwartaal                    8386   
+         2   Totaal mannen en vrouwen  2016 3e kwartaal                    8461   
+         3   Totaal mannen en vrouwen  2016 4e kwartaal                    8478   
+         4                     Mannen  2016 1e kwartaal                    4464   
+         5                     Mannen  2016 2e kwartaal                    4502   
+         6                     Mannen  2016 3e kwartaal                    4541   
+         7                     Mannen  2016 4e kwartaal                    4553   
+         8                    Vrouwen  2016 1e kwartaal                    3823   
+         9                    Vrouwen  2016 2e kwartaal                    3884   
+         10                   Vrouwen  2016 3e kwartaal                    3920   
+         11                   Vrouwen  2016 4e kwartaal                    3925   
+         
+             Werknemer  Werknemer met vaste arbeidsrelatie  \textbackslash{}
+         0        6894                                5146   
+         1        7000                                5163   
+         2        7058                                5169   
+         3        7047                                5155   
+         4        3584                                2733   
+         5        3615                                2729   
+         6        3646                                2713   
+         7        3655                                2731   
+         8        3310                                2413   
+         9        3385                                2435   
+         10       3412                                2456   
+         11       3392                                2424   
+         
+             Werknemer met flexibele arbeidsrelatie  \textbackslash{}
+         0                                     1748   
+         1                                     1836   
+         2                                     1889   
+         3                                     1892   
+         4                                      851   
+         5                                      886   
+         6                                      933   
+         7                                      924   
+         8                                      897   
+         9                                      950   
+         10                                     956   
+         11                                     968   
+         
+            Percentage werknemer met  vaste arbeidsrelatie  \textbackslash{}
+         0                                          74.64\%   
+         1                                          73.76\%   
+         2                                          73.24\%   
+         3                                          73.15\%   
+         4                                          76.26\%   
+         5                                          75.49\%   
+         6                                          74.41\%   
+         7                                          74.72\%   
+         8                                          72.90\%   
+         9                                          71.94\%   
+         10                                         71.98\%   
+         11                                         71.46\%   
+         
+            Percentage werknemer met flexibele arbeidsrelatie  
+         0                                             33.97\%  
+         1                                             35.56\%  
+         2                                             36.54\%  
+         3                                             36.70\%  
+         4                                             31.14\%  
+         5                                             32.47\%  
+         6                                             34.39\%  
+         7                                             33.83\%  
+         8                                             37.17\%  
+         9                                             39.01\%  
+         10                                            38.93\%  
+         11                                            39.93\%  
+\end{Verbatim}
+        
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}77}]:} \PY{c+c1}{\PYZsh{} Including labels in a text file of the csv as an alteration}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}78}]:} \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd}
+         \PY{n}{df1}\PY{o}{=}\PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{datasets/datasets/11.csv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{df1}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+                    Geslacht           Periode  Toaal Werzame Personen  \textbackslash{}
+0   Totaal mannen en vrouwen  2016 1e kwartaal                    8287   
+1   Totaal mannen en vrouwen  2016 2e kwartaal                    8386   
+2   Totaal mannen en vrouwen  2016 3e kwartaal                    8461   
+3   Totaal mannen en vrouwen  2016 4e kwartaal                    8478   
+4                     Mannen  2016 1e kwartaal                    4464   
+5                     Mannen  2016 2e kwartaal                    4502   
+6                     Mannen  2016 3e kwartaal                    4541   
+7                     Mannen  2016 4e kwartaal                    4553   
+8                    Vrouwen  2016 1e kwartaal                    3823   
+9                    Vrouwen  2016 2e kwartaal                    3884   
+10                   Vrouwen  2016 3e kwartaal                    3920   
+11                   Vrouwen  2016 4e kwartaal                    3925   
+
+    Werknemer  Werknemer met vaste arbeidsrelatie  \textbackslash{}
+0        6894                                5146   
+1        7000                                5163   
+2        7058                                5169   
+3        7047                                5155   
+4        3584                                2733   
+5        3615                                2729   
+6        3646                                2713   
+7        3655                                2731   
+8        3310                                2413   
+9        3385                                2435   
+10       3412                                2456   
+11       3392                                2424   
+
+    Werknemer met flexibele arbeidsrelatie  \textbackslash{}
+0                                     1748   
+1                                     1836   
+2                                     1889   
+3                                     1892   
+4                                      851   
+5                                      886   
+6                                      933   
+7                                      924   
+8                                      897   
+9                                      950   
+10                                     956   
+11                                     968   
+
+   Percentage werknemer met  vaste arbeidsrelatie  \textbackslash{}
+0                                          74.64\%   
+1                                          73.76\%   
+2                                          73.24\%   
+3                                          73.15\%   
+4                                          76.26\%   
+5                                          75.49\%   
+6                                          74.41\%   
+7                                          74.72\%   
+8                                          72.90\%   
+9                                          71.94\%   
+10                                         71.98\%   
+11                                         71.46\%   
+
+   Percentage werknemer met flexibele arbeidsrelatie  
+0                                             33.97\%  
+1                                             35.56\%  
+2                                             36.54\%  
+3                                             36.70\%  
+4                                             31.14\%  
+5                                             32.47\%  
+6                                             34.39\%  
+7                                             33.83\%  
+8                                             37.17\%  
+9                                             39.01\%  
+10                                            38.93\%  
+11                                            39.93\%  
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}79}]:} \PY{n}{df1}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}79}]:}                     Geslacht           Periode  Toaal Werzame Personen  \textbackslash{}
+         0   Totaal mannen en vrouwen  2016 1e kwartaal                    8287   
+         1   Totaal mannen en vrouwen  2016 2e kwartaal                    8386   
+         2   Totaal mannen en vrouwen  2016 3e kwartaal                    8461   
+         3   Totaal mannen en vrouwen  2016 4e kwartaal                    8478   
+         4                     Mannen  2016 1e kwartaal                    4464   
+         5                     Mannen  2016 2e kwartaal                    4502   
+         6                     Mannen  2016 3e kwartaal                    4541   
+         7                     Mannen  2016 4e kwartaal                    4553   
+         8                    Vrouwen  2016 1e kwartaal                    3823   
+         9                    Vrouwen  2016 2e kwartaal                    3884   
+         10                   Vrouwen  2016 3e kwartaal                    3920   
+         11                   Vrouwen  2016 4e kwartaal                    3925   
+         
+             Werknemer  Werknemer met vaste arbeidsrelatie  \textbackslash{}
+         0        6894                                5146   
+         1        7000                                5163   
+         2        7058                                5169   
+         3        7047                                5155   
+         4        3584                                2733   
+         5        3615                                2729   
+         6        3646                                2713   
+         7        3655                                2731   
+         8        3310                                2413   
+         9        3385                                2435   
+         10       3412                                2456   
+         11       3392                                2424   
+         
+             Werknemer met flexibele arbeidsrelatie  \textbackslash{}
+         0                                     1748   
+         1                                     1836   
+         2                                     1889   
+         3                                     1892   
+         4                                      851   
+         5                                      886   
+         6                                      933   
+         7                                      924   
+         8                                      897   
+         9                                      950   
+         10                                     956   
+         11                                     968   
+         
+            Percentage werknemer met  vaste arbeidsrelatie  \textbackslash{}
+         0                                          74.64\%   
+         1                                          73.76\%   
+         2                                          73.24\%   
+         3                                          73.15\%   
+         4                                          76.26\%   
+         5                                          75.49\%   
+         6                                          74.41\%   
+         7                                          74.72\%   
+         8                                          72.90\%   
+         9                                          71.94\%   
+         10                                         71.98\%   
+         11                                         71.46\%   
+         
+            Percentage werknemer met flexibele arbeidsrelatie  
+         0                                             33.97\%  
+         1                                             35.56\%  
+         2                                             36.54\%  
+         3                                             36.70\%  
+         4                                             31.14\%  
+         5                                             32.47\%  
+         6                                             34.39\%  
+         7                                             33.83\%  
+         8                                             37.17\%  
+         9                                             39.01\%  
+         10                                            38.93\%  
+         11                                            39.93\%  
+\end{Verbatim}
+        
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}80}]:} \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
+         \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}81}]:} \PY{o}{\PYZpc{}}\PY{k}{matplotlib} inline
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}82}]:} \PY{c+c1}{\PYZsh{} Creating 12}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}83}]:} \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd}
+         \PY{n}{df1}\PY{o}{=}\PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{datasets/datasets/12.csv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{df1}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+             Periode  Toaal Werzame Personen  Werknemer  \textbackslash{}
+0   2016 1e kwartaal                    8287       6894   
+1   2016 2e kwartaal                    8386       7000   
+2   2016 3e kwartaal                    8461       7058   
+3  T2016 4e kwartaal                    8478       7047   
+
+   Werknemer met vaste arbeidsrelatie  Werknemer met flexibele arbeidsrelatie  \textbackslash{}
+0                                5146                                    1748   
+1                                5163                                    1836   
+2                                5169                                    1889   
+3                                5155                                    1892   
+
+  Percentage werknemer met  vaste arbeidsrelatie  \textbackslash{}
+0                                         74.64\%   
+1                                         73.76\%   
+2                                         73.24\%   
+3                                         73.15\%   
+
+  Percentage werknemer met flexibele arbeidsrelatie  
+0                                            33.97\%  
+1                                            35.56\%  
+2                                            36.54\%  
+3                                            36.70\%  
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}84}]:} \PY{n}{df1}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}84}]:}              Periode  Toaal Werzame Personen  Werknemer  \textbackslash{}
+         0   2016 1e kwartaal                    8287       6894   
+         1   2016 2e kwartaal                    8386       7000   
+         2   2016 3e kwartaal                    8461       7058   
+         3  T2016 4e kwartaal                    8478       7047   
+         
+            Werknemer met vaste arbeidsrelatie  Werknemer met flexibele arbeidsrelatie  \textbackslash{}
+         0                                5146                                    1748   
+         1                                5163                                    1836   
+         2                                5169                                    1889   
+         3                                5155                                    1892   
+         
+           Percentage werknemer met  vaste arbeidsrelatie  \textbackslash{}
+         0                                         74.64\%   
+         1                                         73.76\%   
+         2                                         73.24\%   
+         3                                         73.15\%   
+         
+           Percentage werknemer met flexibele arbeidsrelatie  
+         0                                            33.97\%  
+         1                                            35.56\%  
+         2                                            36.54\%  
+         3                                            36.70\%  
+\end{Verbatim}
+        
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}88}]:} \PY{c+c1}{\PYZsh{} Created the most relevant and best file to proceed with}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}89}]:} \PY{c+c1}{\PYZsh{}import libraries}
+         \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd}
+         \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt}
+         \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{dates} \PY{k}{as} \PY{n+nn}{mdates}
+         \PY{o}{\PYZpc{}}\PY{k}{matplotlib} inline
+         
+         \PY{c+c1}{\PYZsh{}picking my variables}
+         
+         \PY{n}{data} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{datasets/datasets/12.csv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{usecols}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Periode}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Toaal Werzame Personen}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Werknemer}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Werknemer met vaste arbeidsrelatie}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Werknemer met flexibele arbeidsrelatie}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{parse\PYZus{}dates}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Periode}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+         
+         \PY{n}{data}\PY{o}{.}\PY{n}{set\PYZus{}index}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Periode}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{n}{inplace}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}
+         
+         \PY{c+c1}{\PYZsh{}plot my data}
+         \PY{n}{fig}\PY{p}{,} \PY{n}{ax} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{subplots}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{12}\PY{p}{,}\PY{l+m+mi}{18}\PY{p}{)}\PY{p}{)}
+         \PY{n}{data}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{ax}\PY{o}{=}\PY{n}{ax}\PY{p}{)}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}89}]:} <matplotlib.axes.\_subplots.AxesSubplot at 0x23d168b1c18>
+\end{Verbatim}
+        
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_42_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}94}]:} \PY{n}{data}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{kind}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bar}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{ax}\PY{o}{=}\PY{n}{ax}\PY{p}{)}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}94}]:} <matplotlib.axes.\_subplots.AxesSubplot at 0x23d168b1c18>
+\end{Verbatim}
+        
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}97}]:} \PY{c+c1}{\PYZsh{}import libraries}
+         \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd}
+         \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt}
+         \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{dates} \PY{k}{as} \PY{n+nn}{mdates}
+         \PY{o}{\PYZpc{}}\PY{k}{matplotlib} inline
+         
+         \PY{c+c1}{\PYZsh{}picking my variables}
+         
+         \PY{n}{data} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{datasets/datasets/12.csv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{usecols}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Periode}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Toaal Werzame Personen}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Werknemer}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Werknemer met vaste arbeidsrelatie}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Werknemer met flexibele arbeidsrelatie}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{parse\PYZus{}dates}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Periode}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+         
+         \PY{n}{data}\PY{o}{.}\PY{n}{set\PYZus{}index}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Periode}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{n}{inplace}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}
+         
+         \PY{c+c1}{\PYZsh{}plot my data}
+         \PY{n}{fig}\PY{p}{,} \PY{n}{ax} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{subplots}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{12}\PY{p}{,}\PY{l+m+mi}{18}\PY{p}{)}\PY{p}{)}
+         \PY{n}{data}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{kind}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bar}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{ax}\PY{o}{=}\PY{n}{ax}\PY{p}{)}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}97}]:} <matplotlib.axes.\_subplots.AxesSubplot at 0x23d168e44e0>
+\end{Verbatim}
+        
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_44_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor} }]:} 
+\end{Verbatim}
+
+
+    % Add a bibliography block to the postdoc
+    
+    
+    
+    \end{document}
